@@ -1,0 +1,678 @@
+/* 头部 */
+
+.header {
+	height: 140px;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto 4px;
+}
+
+.header-bg {
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url(../img/bg1.png) no-repeat center;
+	background-size: cover;
+}
+
+.header img {
+	margin: 10px 0 0 16px;
+}
+
+/* 脚部 */
+.footer {
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* 首页 */
+.margincenter {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.magintop {
+	margin-top: 50px;
+}
+
+.disver {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.message {
+	line-height: 80px;
+	padding-left: 20px;
+	margin-top: 4px;
+	height: 80px;
+	background: url(../img/bg1.png) no-repeat center;
+	background-size: cover;
+}
+
+.message label {
+	color: #FFFFFF;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 0 4px;
+}
+
+.message input {
+	height: 34px;
+	width: 178px;
+	margin: 0 4px;
+	text-indent: 12px;
+	border: 1px solid rgba(185, 185, 185, 1);
+}
+
+.iptBox,
+.registerBtn,
+.checkCode {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#check {
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#code {
+	display: inline-block;
+	vertical-align: middle;
+	height: 36px;
+	width: 110px;
+	color: #FFF000;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+}
+
+.registerBtn {
+	margin-left: 4px;
+	margin-top: -1px;
+}
+
+.home .notice {
+	font-size: 18px;
+	font-family: MicrosoftYaHei;
+	font-weight: 400;
+	color: rgba(255, 0, 0, 1);
+	line-height: 28px;
+	margin: 10px 0 20px;
+}
+
+/* 注册页 */
+.register {
+	width: 1200px;
+	margin: 0 auto;
+	background: url(../img/bg2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.regContent {
+	width: 570px;
+	margin: 0 auto;
+}
+
+.register h3 {
+	font-size: 24px;
+	font-family: MicrosoftYaHei;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: 21px;
+	padding: 46px 0;
+}
+
+.register label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 120px;
+	font-size: 18px;
+	font-family: MicrosoftYaHei;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 21px;
+}
+
+.regContent input {
+	height: 34px;
+	width: 178px;
+	text-indent: 12px;
+	border: 1px solid #B9B9B9;
+	margin: 0 16px 30px 0;
+}
+
+
+.useNotice {
+	font-size: 14px;
+	font-family: MicrosoftYaHei;
+	font-weight: 400;
+	color: rgba(252, 255, 0, 1);
+	line-height: 28px;
+	margin-top: 44px;
+}
+
+.agreeBox {
+	text-align: center;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 34px 0 50px 0;
+}
+
+#agree {
+	height: 18px;
+	width: 18px;
+	margin: 0 6px 0 0;
+	vertical-align: text-bottom;
+}
+
+.iptNotice {
+	font-size: 18px;
+	color: #FF0000;
+	display: inline-block;
+	width: 240px;
+	vertical-align: middle;
+}
+
+/* 导航 */
+
+.navBox {
+	width: 200px;
+	position: relative;
+}
+
+.navBg {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	z-index: -1;
+	background-color: #084F32;
+}
+
+/* 使用说明 */
+.rightContent {
+	width: 860px;
+	margin-left: 82px;
+}
+
+.disver h3 {
+	font-size: 24px;
+}
+
+.explainImg {
+	height: 138px;
+	width: 190px;
+	margin-bottom: 20px;
+}
+
+.explainImg img {
+	height: 100%;
+	width: 100%;
+}
+
+.explainStep li {
+	float: left;
+	width: 190px;
+	margin: 66px 25px 0 0;
+	cursor: pointer;
+}
+
+.goBuy {
+	margin: 25px 0 80px 0;
+}
+
+
+/* 支付付费 */
+.payNum {
+	text-align: center;
+	line-height: 150px;
+	margin-bottom: 170px;
+}
+
+.paySuc,
+.ewmBtn {
+	cursor: pointer;
+}
+
+/* 成绩确认 */
+.disverm {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.grade>div {
+	margin: 48px 0;
+}
+
+.grade label {
+	width: 130px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.grey {
+	color: #A1A1A1;
+}
+
+.address select {
+	border: none;
+	outline: none;
+	/* font-weight: bold; */
+	font-size: 18px;
+}
+
+.grade input[type='radio'] {
+	height: 18px;
+	width: 18px;
+	margin: 0 4px;
+	vertical-align: middle;
+}
+
+.stuType {
+	/* font-weight: bold; */
+}
+
+.grade input[type='text'] {
+	height: 36px;
+	width: 180px;
+	text-indent: 12px;
+	border: 1px solid #b9b9b9;
+}
+
+.redNotice {
+	display: inline-block;
+	width: 468px;
+	color: #FF0000;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-left: 16px;
+}
+
+.grade .importantNotice {
+	font-size: 14px;
+	color: #FF0000;
+	width: 606px;
+	margin: 0 auto;
+	line-height: 28px;
+}
+
+.sureGrade {
+	margin-right: 30px;
+}
+
+/* 折算 */
+.convert {
+	margin: 54px 0 58px;
+}
+
+.convert tr {
+	display: block;
+	margin: 50px 0;
+}
+
+.convert td {
+	min-width: 100px;
+	text-align: right;
+}
+
+.convert .redNotice {
+	display: initial;
+}
+
+.redColor {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.convert .grey {
+	margin: 0 4px;
+}
+
+.underline {
+	min-width: 50px;
+	text-decoration: underline;
+}
+
+.convert .result {
+	margin-top: 100你说分手就分手啊px;
+}
+
+/* 查询 */
+.mt-tabpage {
+	width: 800px;
+	margin-top: 70px;
+}
+
+.mt-tabpage-title {
+	height: 50px;
+}
+
+.mt-tabpage-title .mt-tabpage-item {
+	display: inline-block;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+
+}
+
+.mt-tabpage-title .mt-tabpage-item:first-child {
+	background: url(../img/2017_2.png) no-repeat center;
+	background-size: cover;
+}
+
+.mt-tabpage-title .mt-tabpage-item:nth-child(2) {
+	background: url(../img/2018_2.png) no-repeat center;
+	background-size: cover;
+	margin-left: -16px;
+}
+
+.mt-tabpage-title .mt-tabpage-item:first-child.mt-tabpage-item-cur {
+	background: url(../img/2017_1.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.mt-tabpage-title .mt-tabpage-item:nth-child(2).mt-tabpage-item-cur {
+	background: url(../img/2018_1.png) no-repeat center;
+	background-size: cover;
+}
+
+.mt-tabpage-count {
+	position: relative;
+	width: 800px;
+	height: 330px;
+	box-sizing: border-box;
+	padding: 38px;
+	overflow: hidden;
+	border: 1px solid #B9B9B9;
+}
+
+.mt-tabpage-cont__wrap {
+	position: absolute;
+}
+
+.mt-tabpage-count .mt-tabpage-item {
+	width: 800px;
+}
+
+.point em {
+	font-weight: bold;
+	color: #000000;
+	margin-right: 48px;
+}
+
+.point {
+	width: 360px;
+	margin: 0 auto;
+}
+
+.subsection>div {
+	margin: 16px 0;
+}
+
+.suggest {
+	font-size: 14px;
+	color: #FF0000;
+	line-height: 28px;
+	margin: 30px 0 30px 100px;
+}
+
+.inquire .input {
+	height: 36px;
+	width: 135px;
+	border: 1px solid #B9B9B9;
+	text-indent: 12px;
+}
+
+.inquire {
+	margin-bottom: 58px;
+}
+
+.school input,
+.subsection input {
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+/* 查询学校列表 */
+.school {
+	height: 460px;
+}
+
+.school table {
+	display: table;
+	width: 100%;
+	text-align: left;
+	line-height: 36px;
+}
+
+.school table tbody {
+	font-size: 18px;
+	color: #A1A1A1;
+	display: block;
+	overflow: auto;
+	height: 420px;
+}
+
+.school thead {
+	display: block;
+}
+
+.school thead th {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.school select {
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	margin: -6px 0 0 -6px;
+}
+
+.descript {
+	color: #FF0000;
+	font-size: 14px;
+	text-align: center;
+	margin: 20px 0 10px 0;
+}
+
+.btnBox {
+	margin-bottom: 38px;
+}
+
+/* 弹窗样式 */
+.modelBgMain,
+.modelBg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.model {
+	position: absolute;
+	height: 650px;
+	width: 910px;
+	top: 50%;
+	left: 50%;
+	margin-left: -455px;
+	margin-top: -325px;
+	z-index: 9;
+	color: #F4B82C;
+	background-color: #084F32;
+
+}
+
+.modelContent {
+	padding: 0 56px;
+	box-sizing: border-box;
+}
+
+.close {
+	text-align: right;
+	cursor: pointer;
+	margin: 10px 10px 26px 0;
+}
+
+.modelContent h3 {
+	margin-bottom: 50px;
+}
+
+.modelContent label {
+	width: 102px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.modelText {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 680px;
+}
+
+.modelContent>div {
+	margin-bottom: 20px;
+}
+
+/* 专业查询 */
+.redDesc {
+	font-size: 14px;
+	color: #FF0000;
+	line-height: 28px;
+	margin: 54px 0 42px;
+}
+
+.domain .school table tbody,
+.domain .school {
+	height: inherit;
+}
+
+.searchIpt {
+	margin: 40px 0;
+}
+
+.searchIpt input {
+	width: 200px;
+	height: 36px;
+	text-indent: 12px;
+	border: 1px solid #B9B9B9;
+}
+
+.domain .input {
+	height: 36px;
+	width: 135px;
+	border: 1px solid #B9B9B9;
+	text-indent: 12px;
+	margin: 0 10px;
+}
+
+.returnSchool {
+	text-align: center;
+	margin: 40px 0 136px;
+}
+
+.domainTable table {
+	display: table;
+	width: 70%;
+	color: #F4B82C;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: left;
+}
+
+.domainTable table input {
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+}
+
+.domainTable {
+	height: 270px;
+	overflow: auto;
+}
+
+.modelBgMain h3 {
+	margin: 0;
+}
+
+.modelBgMain h4 {
+	margin: 30px 0;
+}
+
+.processBox {
+	width: 470px;
+	height: 30px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 2px solid rgba(244, 184, 44, 1);
+}
+
+.process {
+	height: 100%;
+	background-color: #F4B82C;
+}
+
+/* 退出页 */
+.workRoom {
+	height: 462px;
+	background: rgba(8, 79, 50, 1);
+}
+
+.workRoom div:first-child {
+	padding-top: 132px;
+}
+
+.closing {
+	font-size: 24px;
+	margin: 140px 0;
+	line-height: 48px;
+}
+
+.exit {
+	-webkit-animation-name: fadeOut;
+	/*动画名称*/
+	-webkit-animation-duration: 3s;
+	/*动画持续时间*/
+	-webkit-animation-iteration-count: 1;
+	/*动画次数*/
+	-webkit-animation-delay: 0s;
+	/*延迟时间*/
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+		/*初始状态 透明度为0*/
+	}
+
+	50% {
+		opacity: 0.5;
+		/*中间状态 透明度为0*/
+	}
+
+	100% {
+		opacity: 0;
+		/*结尾状态 透明度为1*/
+	}
+}

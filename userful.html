@@ -1,0 +1,95 @@
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<header>
+	<script type="text/javascript">
+		$("header").load("./header.html")
+	</script>
+</header>
+<div class="userful margincenter">
+	<div class="magintop">
+		<div class="leftNav disver">
+			<script type="text/javascript">
+				$(".leftNav").load("./leftNav.html")
+			</script>
+		</div>
+		<div class="explain disver rightContent">
+			<h3>[使用说明]</h3>
+			<div class="explainStep">
+				<ul class="clearfix">
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>1.付费</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>2.确认基本信息</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>3.折算成绩</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>4.设置查询年度和区间</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>5.院校查询结果，可分类分批次排序浏览</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>6.选中学校查看简介或者去选专业</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>7.输入查询专业</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/bg2.jpg">
+						</div>
+						<p>8.专业显示子页面</p>
+					</li>
+				</ul>
+			</div>
+			<div class="textcenter goBuy"><a href="pay.html"><img src="img/qff.png" ></a></div>
+			<footer>
+				<script type="text/javascript">
+					$("footer").load("./footer.html")
+				</script>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<!-- 弹窗 -->
+	<div class="modelBg">
+		<div class="model">
+			<div class="close"><img src="img/close.png" ></div>
+			<div class="modelContent">
+				<img src="img/bg2.jpg" >
+			</div>
+		</div>
+	</div>
+	<script src="js/model.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".explainStep").find("li").on("click",function(){
+			showModel()
+		})
+	})
+</script>

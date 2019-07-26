@@ -1,0 +1,51 @@
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<header>
+			<script type="text/javascript">
+				$("header").load("./header.html")
+			</script>
+		</header>
+		<div class="register">
+			<div class="regContent">
+				<h3>[注册新账号]</h3>
+				<div class="iptContetn">
+					<div>
+						<label>用户名</label>
+						<input type="text" name="username" id="username" value="" placeholder="请填写用户名"/>
+						<span class="iptNotice">中文，英文，数字（不包括@，_，~等特殊字符）请牢记 </span>
+					</div>
+					<div>
+						<label>密码</label>
+						<input type="password" name="password" id="password" value="" placeholder="请填写密码"/>
+						<span  class="iptNotice">请牢记</span>
+					</div>
+					<div>
+						<label>再次输入密码</label>
+						<input type="password" name="passwordA" id="passwordA" value="" placeholder="请再次填写密码"/>
+					</div>
+					<div>
+						<label>验证码</label>
+						<input type="text" class="input" placeholder="请填写验证码"/><span id="code" class="nocode">验证码</span> 
+					</div>
+					<div class="textcenter"><button id="check"><img src="img/zc.png" ></button></div>
+				</div>
+				<div class="useNotice">
+					<p>使用须知：</p>
+					<p>1.本系统数据基本来源于官方发布高招志愿、录取分数线、位次表、报考资深人士；</p>
+					<p>2.生成之结果只起最大程度便利、参考作用，请理性对待；</p>
+					<p>3.本身录取也有相对不确定和波动性，请充分估量风险（相应步骤也有提示）；</p>
+					<p>4.专业选择以综合推荐指数量化，包括高校分类，终归一家之言，有条件的人请进一步确认。</p>
+				</div>
+				<div class="agreeBox">
+					<input type="checkbox" name="agree" id="agree" value=""  checked="checked"/>同意
+				</div>
+			</div>
+		</div>
+		<footer>
+			<script type="text/javascript">
+				$("footer").load("./footer.html")
+			</script>
+		</footer>
+		<script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

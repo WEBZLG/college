@@ -1,0 +1,107 @@
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<header>
+			<script type="text/javascript">
+				$("header").load("./header.html")
+			</script>
+		</header>
+		<div class="margincenter">
+			<div class="magintop">
+				<div class="leftNav disver">
+					<script type="text/javascript">
+						$(".leftNav").load("./leftNav.html")
+					</script>
+				</div>
+				<div class="disver rightContent">
+					<h3>[查询结果显示]</h3>
+					<div class="school">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th style="width: 30px;"></th>
+									<th style="width: 200px;">学校名称</th>
+									<th style="width: 85px;">地点</th>
+									<th style="width: 82px;">
+										<select name="">
+											<option value="">分类</option>
+										</select>
+									</th>
+									<th style="width: 113px;">录取省份</th>
+									<th style="width: 65px;">年度</th>
+									<th style="width: 106px;">
+										<select name="">
+											<option value="">批次</option>
+										</select>
+									</th>
+									<th style="width: 95px;">文/理生</th>
+									<th style="width: 86px;">分数线<span><img src="img/ud.png" ></span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="radio" name="school" id="" value="" /></td>
+									<td style="width: 200px;">哈尔滨工业大学</td>
+									<td style="width: 85px;">哈尔滨</td>
+									<td style="width: 82px;">综合</td>
+									<td style="width: 113px;">黑龙江省</td>
+									<td style="width: 65px;">2018</td>
+									<td style="width: 106px;">一本A段</td>
+									<td style="width: 95px;">理工</td>
+									<td style="width: 86px;">610</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="descript">综合指学校优势学科占多个学科大类领域</p>
+					<div class="textcenter btnBox">
+						<a href="inquire.html"><img src="img/hdfd.png" ></a>
+						<a href="javascript:void(0)" class="viewSchool"><img src="img/ckxx.png" ></a>
+						<a href="domain.html"><img src="img/xzy.png" ></a>
+					</div>
+					<footer>
+						<script type="text/javascript">
+							$("footer").load("./footer.html")
+						</script>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+<!-- 弹窗 -->
+	<div class="modelBg">
+		<div class="model">
+			<div class="close"><img src="img/close.png" ></div>
+			<div class="modelContent">
+				<h3>[学校简介详情]</h3>
+				<div class="">
+					<label for="">学校名称</label>
+					<p class="modelText">北京大学</p>
+				</div>
+				<div class="">
+					<label for="">地点</label>
+					<p class="modelText">北京</p>
+				</div>
+				<div class="">
+					<label for="">分类</label>
+					<p class="modelText">综合</p>
+				</div>
+				<div class="">
+					<label for="">学校简介</label>
+					<p class="modelText">北京大学（Peking University），简称“北大”，由中华人民共和国教育部直属，中央直管副部级建制，位列“211工程”、“985工程”、“世界一流大学和一流学科”，入选“基础学科拔尖学生培养试验计划”、“高等学校创新能力提升计划”、“高等学校学科创新引智计划”，为九校联盟、中国大学校长联谊会、京港大学联盟、亚洲大学联盟、东亚研究型大学协会、国际研究型大学联盟、环太平洋大学联盟、东亚四大学论坛、国际公立大学论坛、中俄综合性大学联盟成员。</p>
+				</div>
+				<div class="">
+					<label for="">级别</label>
+					<p class="modelText">A++</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/model.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".viewSchool").on("click",function(){
+				showModel()
+			})
+		})
+	</script>

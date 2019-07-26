@@ -1,0 +1,100 @@
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<header>
+	<script type="text/javascript">
+		$("header").load("./header.html")
+	</script>
+</header>
+<div class="margincenter">
+	<div class="magintop">
+		<div class="leftNav disver">
+			<script type="text/javascript">
+				$(".leftNav").load("./leftNav.html")
+			</script>
+		</div>
+		<div class="disver rightContent">
+			<h3>[查询年度和区间选择]</h3>
+			<div class="inquire">
+				<div class="mt-tabpage" js-tab="3">
+					<div class="mt-tabpage-title">
+						<a href="javascript:;" class="mt-tabpage-item mt-tabpage-item-cur"></a>
+						<a href="javascript:;" class="mt-tabpage-item"></a>
+					</div>
+					<div class="mt-tabpage-count">
+						<ul class="mt-tabpage-cont__wrap">
+							<li class="mt-tabpage-item">
+								<div class="point">
+									<div class="grey">
+										2017 <em>年</em>黑龙江<em>省</em>理工<em>考生</em>
+									</div>
+									<div class="subsection">
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>546-555分</em><span class="redColor">过于激进，劝您慎重</span>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>536-545分</em>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>526-535分</em>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>516-525分</em><span class="redColor">有点保守了</span>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>506-515分</em><span class="redColor">过于保守</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mt-tabpage-item">
+								<div class="point">
+									<div class="grey">
+										2018 <em>年</em>黑龙江<em>省</em>理工<em>考生</em>
+									</div>
+									<div class="subsection">
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>546-555分</em><span class="redColor">过于激进，劝您慎重</span>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>536-545分</em>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>526-535分</em>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>516-525分</em><span class="redColor">有点保守了</span>
+										</div>
+										<div class="">
+											<input type="radio" name="score" id="" value="" /><em>506-515分</em><span class="redColor">过于保守</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="suggest ">
+						<p>建议：</p>
+						<p>同一表（比如一表1-5）由上到下，由相对激进到相对保守有梯度配置，别全部激进或全部保守！</p>
+					</div>
+					<div class="textcenter">
+						<span id="code" class="nocode">验证码</span> <input type="text" class="input" placeholder="请填写验证码"/>
+						<button id="check"><img src="img/cx.png" ></button>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<script type="text/javascript">
+					$("footer").load("./footer.html")
+				</script>
+			</footer>
+		</div>
+	</div>
+</div>
+<script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mt-tabpage.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('[js-tab=3]').tab({
+		curDisplay: 1,
+		changeMethod: 'horizontal'
+	});
+</script>
