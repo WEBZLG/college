@@ -363,30 +363,36 @@
 	width: 180px;
 	height: 50px;
 	line-height: 50px;
-
+    color: #084F32;
+    font-size: 24px;
+    text-align: center;
+    text-indent: -20px;
+    font-weight: bold;
 }
 
 .mt-tabpage-title .mt-tabpage-item:first-child {
-	background: url(../img/2017_2.png) no-repeat center;
+	background: url(../img/yearbg2.png) no-repeat center;
 	background-size: cover;
 }
 
 .mt-tabpage-title .mt-tabpage-item:nth-child(2) {
-	background: url(../img/2018_2.png) no-repeat center;
+	background: url(../img/yearbg2.png) no-repeat center;
 	background-size: cover;
 	margin-left: -16px;
 }
 
 .mt-tabpage-title .mt-tabpage-item:first-child.mt-tabpage-item-cur {
-	background: url(../img/2017_1.png) no-repeat center;
+	background: url(../img/yearbg.png) no-repeat center;
 	background-size: cover;
 	position: relative;
 	z-index: 1;
+    color: #F3B82C;
 }
 
 .mt-tabpage-title .mt-tabpage-item:nth-child(2).mt-tabpage-item-cur {
-	background: url(../img/2018_1.png) no-repeat center;
+	background: url(../img/yearbg.png) no-repeat center;
 	background-size: cover;
+    color: #F3B82C;
 }
 
 .mt-tabpage-count {
