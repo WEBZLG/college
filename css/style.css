@@ -212,7 +212,8 @@
 .explainImg {
 	height: 138px;
 	width: 190px;
-	margin-bottom: 20px;
+	margin-bottom: 6px;
+	position: relative;
 }
 
 .explainImg img {
@@ -223,15 +224,34 @@
 .explainStep li {
 	float: left;
 	width: 190px;
-	margin: 66px 25px 0 0;
-	cursor: pointer;
+	margin: 26px 132px 0 0;
+	font-size: 14px;
+}
+
+.explainStep li:nth-child(3),
+.explainStep li:nth-child(6),
+.explainStep li:nth-child(9) {
+	margin-right: 0;
 }
 
 .goBuy {
-	margin: 25px 0 80px 0;
+	margin: 25px 0 26px 0;
 }
 
-
+.explainImg .zoom {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	z-index: 1;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+.zoomModel{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
 /* 支付付费 */
 .payNum {
 	text-align: center;
@@ -363,11 +383,11 @@
 	width: 180px;
 	height: 50px;
 	line-height: 50px;
-    color: #084F32;
-    font-size: 24px;
-    text-align: center;
-    text-indent: -20px;
-    font-weight: bold;
+	color: #084F32;
+	font-size: 24px;
+	text-align: center;
+	text-indent: -20px;
+	font-weight: bold;
 }
 
 .mt-tabpage-title .mt-tabpage-item:first-child {
@@ -386,13 +406,13 @@
 	background-size: cover;
 	position: relative;
 	z-index: 1;
-    color: #F3B82C;
+	color: #F3B82C;
 }
 
 .mt-tabpage-title .mt-tabpage-item:nth-child(2).mt-tabpage-item-cur {
 	background: url(../img/yearbg.png) no-repeat center;
 	background-size: cover;
-    color: #F3B82C;
+	color: #F3B82C;
 }
 
 .mt-tabpage-count {

@@ -18,51 +18,66 @@
 				<ul class="clearfix">
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use1.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>1.付费</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use2.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>2.确认基本信息</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use3.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>3.折算成绩</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use4.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>4.设置查询年度和区间</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use5.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>5.院校查询结果，可分类分批次排序浏览</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use6.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
 						<p>6.选中学校查看简介或者去选专业</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use7.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
-						<p>7.输入查询专业</p>
+						<p>7.学校简介详情</p>
 					</li>
 					<li>
 						<div class="explainImg">
-							<img src="img/bg2.jpg">
+							<img src="img/use8.png">
+							<img class="zoom" src="img/zoom.png" >
 						</div>
-						<p>8.专业显示子页面</p>
+						<p>8.输入查询专业</p>
+					</li>
+					<li>
+						<div class="explainImg">
+							<img src="img/use9.png">
+							<img class="zoom" src="img/zoom.png" >
+						</div>
+						<p>9.专业显示子页面</p>
 					</li>
 				</ul>
 			</div>
@@ -81,14 +96,16 @@
 		<div class="model">
 			<div class="close"><img src="img/close.png" ></div>
 			<div class="modelContent">
-				<img src="img/bg2.jpg" >
+				<img class="zoomModel" src="img/use1.png" >
 			</div>
 		</div>
 	</div>
 	<script src="js/model.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	$(function(){
-		$(".explainStep").find("li").on("click",function(){
+		$(".explainStep").find(".zoom").on("click",function(){
+			var src = $(this).siblings("img").attr("src")
+			$(".modelContent").find("img").attr("src",src)
 			showModel()
 		})
 	})
