@@ -27,15 +27,41 @@
 					<label>密码</label>
 					<input type="password" name="password" id="password" value="" placeholder="请填写密码"/>
 				</div>
-				<div class="checkCode">
+<!-- 				<div class="checkCode">
 					<label>验证码</label>
 					<span id="code" class="nocode">验证码</span> <input type="text" class="input" placeholder="请填写验证码"/>
 					<button id="check"><img src="img/dl.png" ></button>
-				</div>
+				</div> -->
+				<div class="registerBtn checkcode"> <a href="javascript:void(0)" class="checkbtn"><img src="img/renz.png" ></a></div>
+				<div class="registerBtn checked none"><a href="javascript:void(0)"><img src="img/yirenz.png" ></a></div>
+				<div class="registerBtn"><a href="#" class=""><img src="img/dl.png" ></a></div>
 				<div class="registerBtn"><a href="register.html" class=""><img src="img/zcxzh.png" ></a></div>
 			</div>
 			<div class="notice">
 				<p>注意：连续三次密码输入错误，账号锁定六小时！</p>
+			</div>
+		</div>
+		<div class="checkbox">
+			<div class="widgets__img_check_box" id="select" style="width:300px;margin:15% auto;top:2px;">           
+				<div class="widgets__img_display">
+					<div class="widgets__img_cnt">
+						<img src1="a.jpg" class="widgets__img_src" />
+						<canvas class="widgets__img_fragment_hollow"></canvas>
+						<div class="widgets__img_fragment_cnt">
+							<canvas class="widgets__img_fragment widgets__img_fragment_shadow"></canvas>
+							<canvas class="widgets__img_fragment widgets__img_fragment_content"></canvas>
+						</div>
+						<div class="action">
+							<div class="refreshbtn">刷新</div>
+							<text class="notice"></text>
+							<div class="closebtn">关闭</div>
+						</div>
+					</div>                
+				</div>            
+				<div class="widgets__smooth_cnt">
+					<div class="widgets__smooth_bar"></div>
+					<div class="widgets__smooth_circle"></div>
+				</div>
 			</div>
 		</div>
 		<footer>
@@ -44,5 +70,37 @@
 			</script>
 		</footer>
 		<script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/img_smooth_check.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var checkcode = false;
+			$(".refreshbtn").on("click", function () {
+				s.refresh();
+			});
+			$(".closebtn").on("click",function(){
+				$(".checkbox").hide();
+			})
+			$(".checkbtn").on("click",function(){
+				$(".checkbox").show();
+				var s = WIDGETS.imgSmoothCheck({
+					selector: "#select",
+					data: ["img/t1.png", "img/t2.png", "img/t3.png"],
+					imgHeight: 100,
+					imgWidth: 200,
+					allowableErrorValue: 3,
+					success: function () {
+						$(".notice").text("认证成功")
+						$(".checkcode").addClass("none");
+						$(".checked").removeClass("none");
+						checkcode = true;
+						setTimeout(function(){
+							$(".checkbox").hide();
+						},1500)
+					},
+					error: function (res) {
+						$(".notice").text("认证失败")
+					}
+				});
+			})
+		</script>
 	</body>
 </html>
